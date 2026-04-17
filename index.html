@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .calculator{
+            width:220px;
+            margin:50px auto;
+            border:2px solid black;
+            padding:10px;
+            border-radius:8px;
+        }
+
+        .Display{
+            background: gray;
+            height:40px;
+            margin-bottom:10px;
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            padding:5px;
+            font-size:20px;
+        }
+
+        .buttons{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:5px;
+        }
+
+        button{
+            padding:10px;
+            cursor:pointer;
+            font-size: 16px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+
+        <div class="Display">12345</div>
+
+
+        <div class="buttons">
+
+            <button class="clear">C</button>
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+            <button class="operator">-</button>
+
+
+            <button class="digit">7</button>
+            <button class="digit">8</button>
+            <button class="digit">9</button>
+            <button class="operator">+</button>
+
+
+            <button class="digit">4</button>
+            <button class="digit">5</button>
+            <button class="digit">6</button>
+            <button class="equals">=</button>
+
+            <button class="digit">1</button>
+            <button class="digit">2</button>
+            <button class="digit">3</button>
+            <button class="digit">0</button>
+        </div>
+    </div>
+    <script src="calculation.js"></script>
+</body>
+</html>
